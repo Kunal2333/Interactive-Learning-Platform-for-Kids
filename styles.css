@@ -1,0 +1,170 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fdf6e3;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(45deg, #1e90ff, #ff69b4);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+  background: #ffa389;
+  color: white;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff69b4;
+}
+
+/* Sections */
+.section {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 90%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+}
+
+/* Activity Images */
+.activity-image {
+  width: 100%;
+  max-width: 600px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+/* Canvas for Drawing */
+#art-canvas {
+  border: 2px solid #333;
+  margin: 10px auto;
+  display: block;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background: #1e90ff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #ff69b4;
+}
+
+/* Music Keys */
+#music-keys {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.music-key {
+  padding: 15px;
+  font-size: 1.2rem;
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.music-key:hover {
+  background: #1e90ff;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+
+
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background-color: #fd6bde;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 2.5rem;
+  height: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+
+/* Typing Section */
+#typing-section textarea {
+  width: 80%;
+  margin: 10px auto;
+  display: block;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+}

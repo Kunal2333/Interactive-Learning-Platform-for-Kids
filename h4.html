@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunZone for Kids</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Interactive Learning Platform for Kids! 🎉</h1>
+        <p>Explore, Learn, and Play with Amazing Activities!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#puzzle-section">Puzzles</a></li>
+            <li><a href="#memory-section">Memory Game</a></li>
+            <li><a href="#art-section">Drawing</a></li>
+            <li><a href="#facts-section">Fun Facts</a></li>
+            <li><a href="#quiz-section">Quiz Time</a></li>
+            <li><a href="#music-section">Music Maker</a></li>
+            <li><a href="#typing-section">Typing Area</a></li>
+        </ul>
+    </nav>
+
+
+        <!-- Puzzle Section -->
+        <section id="puzzle-section" class="section">
+            <h2>Solve the Puzzle 🧩</h2>
+            <img src="https://media.istockphoto.com/id/1292652212/photo/little-girl-playing-with-puzzles-at-home.jpg?s=612x612&w=0&k=20&c=-sqipGfTwfzpQBLEzLsKPnKFuW8uwe27zU3PLwMmqrw=" alt="Puzzle Activities" class="activity-image" alt="Puzzle Image" class="activity-image">
+            <p id="math-question"></p>
+            <input type="text" id="puzzle-answer" placeholder="Your answer">
+            <button id="check-answer">Check Answer</button>
+            <p id="puzzle-result"></p>
+        </section>
+
+    <!-- Memory Game Section -->
+    <section id="memory-section" class="section">
+        <h2>Memory Game 🧠</h2>
+        <img src="https://store-images.s-microsoft.com/image/apps.5303.13834962130662620.16bc9f00-a732-4534-843d-1f42a6785ffe.96587c35-351e-4b22-9cd8-f63fd13cf63f?mode=scale&q=90&h=720&w=1280" alt="Memory Game" class="activity-image" alt="Memory Game Image" class="activity-image">
+        <button id="start-memory-game">Start Game</button>
+        <div id="memory-game" class="card-grid"></div>
+    </section>
+
+
+
+        <!-- Drawing Section -->
+        <section id="art-section" class="section">
+            <h2>Create Your Masterpiece 🎨</h2>
+            <img src="https://extendednotesimages.s3.amazonaws.com/channel_images/1332/shutterstock_605013488__800x400.jpg" alt="Art Activities" class="activity-image" alt="Drawing Image" class="activity-image">
+            <canvas id="art-canvas" width="800" height="400"></canvas>
+            <div>
+                <label for="color-picker">Choose a Color:</label>
+                <input type="color" id="color-picker" value="#000000">
+                <label for="pen-thickness">Thickness:</label>
+                <input type="range" id="pen-thickness" min="1" max="20" value="5">
+                <button id="eraser-tool">Eraser</button>
+            </div>
+        </section>
+
+    <!-- Fun Facts Section -->
+    <section id="facts-section" class="section">
+        <h2>Discover Fun Facts 🌍</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNQas1OUbY8F0uNDww9yfQBpFvyUwzPrvuVw&s" alt="Fun Facts" class="activity-image" alt="Fun Facts Image" class="activity-image">
+        <button id="reveal-fact">Reveal a Fun Fact</button>
+        <p id="fun-fact"></p>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz-section" class="section">
+        <h2>Quiz Time! 🤓</h2>
+        <img src="https://cdn.firstcry.com/education/2022/10/24143810/GK-Questions-For-Class-3-Kids.jpg" alt="Quiz Image" class="activity-image">
+        <p id="quiz-question">What is the capital of France?</p>
+        <div id="quiz-options">
+            <button class="quiz-option">Paris</button>
+            <button class="quiz-option">London</button>
+            <button class="quiz-option">Berlin</button>
+            <button class="quiz-option">Madrid</button>
+        </div>
+        <p id="quiz-result"></p>
+    </section>
+
+
+
+
+
+        <!-- Quiz Section
+        <section id="quiz-section" class="section">
+            <h2>Quiz Time! 🤓</h2>
+            <img src="https://cdn.firstcry.com/education/2022/10/24143810/GK-Questions-For-Class-3-Kids.jpg" alt="Quiz Image" class="activity-image">
+            <p id="quiz-question"></p>
+            <div id="quiz-options">
+                <button class="quiz-option">Option 1</button>
+                <button class="quiz-option">Option 2</button>
+                <button class="quiz-option">Option 3</button>
+                <button class="quiz-option">Option 4</button>
+            </div>
+            <p id="quiz-result"></p>
+        </section> -->
+    
+
+    <!-- Music Maker Section -->
+    <section id="music-section" class="section">
+        <h2>Music Maker 🎵</h2>
+        <img src="https://img.freepik.com/premium-photo/three-children-play-music-together-watercolor-illustration_1282444-239318.jpg" alt="Music Maker Image" class="activity-image">
+        <p>Click a key to play a sound!</p>
+        <div id="music-keys">
+            <button class="music-key" data-note="C">C</button>
+            <button class="music-key" data-note="D">D</button>
+            <button class="music-key" data-note="E">E</button>
+            <button class="music-key" data-note="F">F</button>
+            <button class="music-key" data-note="G">G</button>
+        </div>
+    </section>
+
+
+    <!-- Typing Section -->
+    <section id="typing-section" class="section">
+        <h2>Typing Area 🖊️</h2>
+        <img src="https://media.istockphoto.com/id/1513744777/photo/teenage-girls-using-typing-on-laptops.jpg?s=612x612&w=0&k=20&c=rYFnoEIUN4FirDIaapRXj5HTDxb2lIkm5kQQE2M99Aw=">
+        <p>"Once upon a time, there was a little fox named Max. Max loved to run and jump in the green forest. Every day, he would play with his friends, the birds and squirrels. They would race around the big trees, and Max would always win. He was very fast! At the end of the day, Max would rest under a tall tree, feeling happy and tired."</p>
+        <textarea id="typing-area" rows="5" cols="30" placeholder="Type something..."></textarea>
+        <button id="clear-screen">Clear</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FunZone for Kids. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
